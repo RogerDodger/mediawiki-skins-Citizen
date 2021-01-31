@@ -94,15 +94,11 @@
 	}
 
 	h1,
-	h2 {
-		margin-top: @content-margin-top * 3;
-	}
-
+	h2,
 	h3,
 	h4,
 	h5,
-	h6,
-	p + p {
+	h6 {
 		margin-top: @content-margin-top * 2;
 	}
 
@@ -111,24 +107,21 @@
 	h3 + h4,
 	h4 + h5,
 	h5 + h6,
-	p,
 	table {
 		margin-top: @content-margin-top;
 	}
 
 	ul {
-		margin: @content-margin-top 0 0 @content-margin-top * 2;
-
-		ul {
-			margin: 0 0 0 @content-margin-top * 2;
-		}
+		margin-left: 24px;
 	}
 
 	ol {
-		margin: @content-margin-top 0 0 @content-margin-top * 3;
+		margin-left: 30px;
+	}
 
-		ol {
-			margin: 0 0 0 @content-margin-top * 3;
+	ul, ol, {
+		ul, ol {
+			margin-top: 0;
 		}
 	}
 
