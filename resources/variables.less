@@ -346,29 +346,29 @@
 /**
  * Citizen font stack for sans-serif fonts
  *
- * `Roboto` – Default font
- * system-ui - System UI font stack
- * `-apple-system` - Firefox fallback for System UI font stack
+ * `BlinkMacSystemFont` - Mac
+ * `-apple-system` - Mac
+ * `Segoe UI` - Windows
+ * `Roboto` - Android
  */
-@fonts: 'Roboto', system-ui, -apple-system, sans-serif;
+@fonts: "BlinkMacSystemFont", -apple-system, "Segoe UI", Roboto, sans-serif;
 /**
  * Citizen serif font stack
  *
+ * `Linux Libertine` - Linux
  * `Georgia` – Windows, Mac
- * `serif` – (Generic) web font fallback
  */
-@fonts-serif: Georgia, serif;
+@fonts-serif: "Linux Libertine", Georgia, serif;
 /**
  * System font stack for monospace fonts
  *
  * `SFMono-Regular` - macOS 10.12+
  * `Menlo` – macOS 10.6+
  * `Roboto Mono` - Android 4.0+
- * `Consolas` – Windows Vista & newer
- * `Liberation Mono` – Fedora, Ubuntu, … OFL licensed
- * `'Courier New', monospace` – (Generic) web font fallback
+ * `Consolas` – Windows
+ * `Liberation Mono` – Linux
  */
-@fonts-monospace: 'SFMono-Regular', 'Menlo', 'Roboto Mono', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+@fonts-monospace: 'SFMono-Regular', 'Menlo', 'Roboto Mono', 'Consolas', 'Liberation Mono', monospace;
 
 /*
  * Text hierarchy
