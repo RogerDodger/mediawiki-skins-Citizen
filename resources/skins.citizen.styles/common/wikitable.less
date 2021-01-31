@@ -13,23 +13,26 @@ table.wikitable {
 	tr {
 		vertical-align: top;
 
+		th,
+		td {
+			font-size: @content-table-size;
+		}
+
 		th {
 			background-color: transparent;
 			color: var( --color-base--subtle );
-			font-size: @content-caption-size;
 			font-weight: 600;
-			text-align: left;
-		}
-
-		td {
-			font-size: @content-monospace-size;
 		}
 
 		th,
 		td {
-			padding: @margin-side / 2 @margin-side @margin-side / 2 0;
+			padding: @margin-side / 4;
 			border: 0;
 			border-bottom: 1px solid var( --border-color-base );
+		}
+
+		th.headerSort {
+			padding-right: @margin-side;
 		}
 
 		&:hover {
