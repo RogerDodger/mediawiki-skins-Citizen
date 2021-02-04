@@ -7,15 +7,21 @@
 	right: 0;
 	left: 0;
 	display: flex;
+	flex-flow: row wrap;
 	height: var( --height-header );
-	justify-content: space-between;
 	pointer-events: none;
 
 	& > * {
 		pointer-events: auto;
 	}
 
+	&-site {
+		display: flex;
+		align-items: center;
+	}
+
 	&-tools {
+		margin-left: auto;
 		display: inherit;
 	}
 
