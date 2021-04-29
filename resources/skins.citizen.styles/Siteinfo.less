@@ -4,12 +4,11 @@
 	overflow: hidden;
 	flex-grow: 1;
 	align-items: center;
-	margin-right: 10px;
 
-	a {
+	a:not(.mw-logo) {
 		color: var( --color-base--emphasized );
 		font-size: 16px;
-		text-overflow: ellipsis;
+		text-overflow: '-';
 		transition: @transition-opacity-quick;
 		white-space: nowrap;
 
@@ -23,38 +22,32 @@
 	}
 }
 
+#header-logo {
+	.mw-logo-wordmark {
+		display: none;
+	}
+
+	.mw-logo {
+		margin-right: 12px;
+	}
+
+	.mw-logo-icon {
+		height: 42px;
+		width: 42px;
+	}
+}
+
 #header {
 	&-sitetitle {
-		img.mw-logo-wordmark {
-			width: auto;
-			height: 14px;
-		}
+		display: none;
+		visibility: hidden;
 	}
 
 	&-pagetitle {
 		overflow: hidden;
 		color: var( --color-base--emphasized );
 		font-weight: 500;
-		opacity: 0;
-		pointer-events: none;
-		visibility: hidden;
-	}
-}
-
-.skin-citizen--titlehidden {
-	#header {
-		&-sitetitle {
-			position: absolute;
-			opacity: 0;
-			pointer-events: none;
-			visibility: hidden;
-		}
-
-		&-pagetitle {
-			opacity: 1;
-			pointer-events: auto;
-			visibility: visible;
-		}
+		visibility: visible;
 	}
 }
 
