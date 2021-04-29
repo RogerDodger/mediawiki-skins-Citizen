@@ -128,15 +128,11 @@ td {
 
 a {
 	color: var( --color-link );
-	text-decoration: none !important;
+	text-decoration: none;
 
 	&:not( [ href ] ) {
 		cursor: pointer;
 		/* Always cursor:pointer even without href */
-	}
-
-	&:hover {
-		color: var( --color-link--hover );
 	}
 
 	&:active {
@@ -145,10 +141,6 @@ a {
 
 	&.new {
 		color: var( --color-link-new ) !important; // Override visited
-
-		&:hover {
-			color: var( --color-link-new--hover ) !important;
-		}
 
 		&:active {
 			color: var( --color-link-new--active ) !important;

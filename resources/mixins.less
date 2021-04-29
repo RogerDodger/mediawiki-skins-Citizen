@@ -120,6 +120,21 @@
 	content: '';
 }
 
+.link-content-text(@color) {
+	background-image: linear-gradient( to right, @color 0, @color 100% );
+	background-repeat: no-repeat;
+	background-size: 0 100%;
+	transition: @transition-background-quick, @transition-color-quick;
+
+	/* stylelint-disable declaration-property-value-disallowed-list */
+	&:hover {
+		background-size: 100% 100% !important;
+		color: #fff !important;
+		outline: none;
+	}
+	/* stylelint-enable */
+}
+
 // Box-shadow
 // https://codepen.io/sdthornton/pen/wBZdXq
 .boxshadow(@level: 1) {

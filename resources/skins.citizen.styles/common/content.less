@@ -62,6 +62,26 @@
 }
 
 .mw-body-content {
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a[ href^='/' ][ title ]:not( .image ):not( .external ) {
+		.link-content-text( var(--color-primary--hover) );
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&.new {
+			background-image: linear-gradient(to right,
+				var( --color-destructive--hover ) 0,
+				var( --color-destructive--hover ) 100%);
+		}
+	}
+}
+
+.mw-body-content {
 	p {
 		overflow-wrap: break-word;
 	}
