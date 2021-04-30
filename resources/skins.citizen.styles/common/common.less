@@ -259,7 +259,7 @@ video {
 	// Delay scroll animation won't happen on load
 	// Use it only for larger viewport as it is very costly
 	// on mobile devices
-	html.citizen-animations-ready {
+	html.citizen-animations-ready:not(.mw-mmv-lightbox-linger) {
 		scroll-behavior: smooth;
 	}
 }
