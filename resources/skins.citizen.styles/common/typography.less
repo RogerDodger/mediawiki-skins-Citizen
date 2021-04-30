@@ -96,11 +96,12 @@ figcaption,
 	& h1,
 	&-content h1 {
 		font-size: @content-h1-size;
+		font-weight: normal;
+		font-family: @fonts-serif;
 	}
 
 	&-content h1,
 	&-content h2 {
-		font-weight: bold;
 		line-height: 1.2;
 	}
 
@@ -114,6 +115,13 @@ figcaption,
 
 		h2 {
 			font-size: @content-h2-size;
+
+			&:not(#mw-toc-heading) {
+				font-weight: normal;
+				font-family: @fonts-serif;
+				padding-bottom: 0.2em;
+				border-bottom: 3px double var(--color-base--subtle);
+			}
 		}
 
 		h3 {

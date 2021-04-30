@@ -8,28 +8,27 @@ table.wikitable {
 	caption {
 		margin-top: @content-margin-top;
 		font-weight: 600;
+		font-size: 1.1em;
 		text-align: left;
 	}
 
 	tr {
-		vertical-align: top;
+		vertical-align: middle;
 
 		th {
 			background-color: transparent;
-			color: var( --color-base--subtle );
-			font-size: @content-caption-size;
-			font-weight: 500;
-		}
-
-		td {
-			font-size: @content-monospace-size;
+			font-weight: bold;
 		}
 
 		th,
 		td {
-			padding: @margin-side / 2 @margin-side @margin-side / 2 0;
+			padding: @margin-side / 4;
 			border: 0;
 			border-bottom: 1px solid var( --border-color-base );
+		}
+
+		th.headerSort {
+			padding-right: @margin-side;
 		}
 
 		&:hover {
