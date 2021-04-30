@@ -178,7 +178,6 @@ a {
 .mw-body,
 .parsoid-body {
 	direction: ltr;
-	overflow-x: hidden; // avoid breaking layout in smaller screen sizes
 }
 
 .mw-body-content {
@@ -257,11 +256,6 @@ video {
 }
 
 @media ( min-width: @width-breakpoint-tablet ) {
-	.mw-body,
-	.parsoid-body {
-		overflow-x: auto;
-	}
-
 	table {
 		display: table;
 	}
