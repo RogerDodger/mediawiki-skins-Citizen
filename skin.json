@@ -26,7 +26,6 @@
 					],
 					"styles": [
 						"skins.citizen.styles",
-						"skins.citizen.styles.fonts",
 						"skins.citizen.styles.toc",
 						"skins.citizen.icons",
 						"skins.citizen.icons.ca",
@@ -117,15 +116,6 @@
 			],
 			"features": [],
 			"styles": [ "resources/skins.citizen.styles.debug/skins.citizen.styles.debug.less" ]
-		},
-		"skins.citizen.styles.fonts": {
-			"class": "ResourceLoaderSkinModule",
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"features": [],
-			"styles": [ "resources/skins.citizen.styles.fonts/skins.citizen.styles.fonts.less" ]
 		},
 		"skins.citizen.styles.lazyload": {
 			"class": "ResourceLoaderSkinModule",
